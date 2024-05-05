@@ -14,7 +14,7 @@
   </head>
   <body>
     <header>
-      <div class="logo"></div>
+      <div class="logo"><img src="../static/images/logo.png?{{ cache_id }}" alt="HBNB Logo"></div>
     </header>
     <div class="container">
       <section class="filters">
@@ -60,9 +60,9 @@
 	    <div class="price_by_night">${{ place.price_by_night }}</div>
 	  </div>
 	  <div class="information">
-	    <div class="max_guest">{{ place.max_guest }} Guest{% if place.max_guest != 1 %}s{% endif %}</div>
-            <div class="number_rooms">{{ place.number_rooms }} Bedroom{% if place.number_rooms != 1 %}s{% endif %}</div>
-            <div class="number_bathrooms">{{ place.number_bathrooms }} Bathroom{% if place.number_bathrooms != 1 %}s{% endif %}</div>
+	    <div class="max_guest"> <img src="../static/images/icon_group.png?{{ cache_id }}" alt="Max Guest Icon"> {{ place.max_guest }} Guest{% if place.max_guest != 1 %}s{% endif %}</div>
+            <div class="number_rooms"><img src="../static/images/icon_bed.png?{{ cache_id }}" alt="Bed Icon">{{ place.number_rooms }} Bedroom{% if place.number_rooms != 1 %}s{% endif %}</div>
+            <div class="number_bathrooms"><img src="../static/images/icon_bath.png?{{ cache_id }}" alt="Bath">{{ place.number_bathrooms }} Bathroom{% if place.number_bathrooms != 1 %}s{% endif %}</div>
 	  </div>
 	  <div class="user">
             <b>Owner:</b> {{ place.user.first_name }} {{ place.user.last_name }}
