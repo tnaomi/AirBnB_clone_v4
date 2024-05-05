@@ -174,3 +174,27 @@ Based on ``4-hbnb.js``
 	- if the checkbox is unchecked, you must remove the ``State`` or ``City ID`` from the variable
 	- update the ``h4`` tag inside the ``div`` Locations with the list of ``States`` or ``Cities`` checked
 - When the button tag is clicked, a new ``POST`` request to ``places_search`` should be made with the list of ``Amenities``, ``Cities`` and ``States`` checked
+
+### 7. Reviews
+
+Let’s add a new feature: show and hide reviews!
+
+Replace the route ``100-hbnb`` to ``101-hbnb`` in the file ``101-hbnb.py`` (based on ``100-hbnb.py``)
+
+Create a new template ``101-hbnb.html`` (based on ``100-hbnb.html``) and update it:
+
+- Import the JavaScript ``static/scripts/101-hbnb.js`` in the ``<head>`` tag (instead of ``101-hbnb.js``)
+- Design the list of reviews from this task
+- Add a span element at the right of the ``H2`` “Reviews” with ``value “show”`` (add all necessary attributes to do this feature)
+
+Write a JavaScript script (``static/scripts/101-hbnb.js``):
+
+- Based on ``100-hbnb.js``
+- When the span next to the Reviews ``h2`` is clicked by the user:
+	- Fetch, parse, display reviews and change the text to ``“hide”``
+	- If the text is ``“hide”``: remove all Review elements from the DOM
+	- This button should work like a toggle to fetch/display and hide reviews
+
+__File__
+
+``web_dynamic/101-hbnb.py``, ``web_dynamic/templates/101-hbnb.html``, ``web_dynamic/static/scripts/101-hbnb.js``
