@@ -38,7 +38,7 @@ def hbnb():
     places = storage.all(Place).values()
     places = sorted(places, key=lambda k: k.name)
 
-    return RT('2-hbnb.html',
+    return RT('3-hbnb.html',
               states=st_ct,
               amenities=amenities,
               places=places,

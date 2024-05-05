@@ -45,7 +45,7 @@ function fetchPlaces () {
         '</div>',
         '<div class="information">',
         `<div class="max_guest">${r.max_guest} Guest(s)</div>`,
-        `<div class="number_rooms">${r.number_rooms} Bedroom(s)</div>`,
+        `<div class="number_rooms">${r.number_rooms} Bedroooom(s)</div>`,
         `<div class="number_bathrooms">${r.number_bathrooms} Bathroom(s)</div>`,
         '</div>',
         '<div class="description">',
