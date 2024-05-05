@@ -27,7 +27,7 @@ def hbnb():
     states = storage.all(State).values()
     states = sorted(states, key=lambda k: k.name)
     st_ct = []
-    #Cache id for Task 2
+    # Cache id for Task 2
     cache_id = uuid.uuid4()
 
     for state in states:
