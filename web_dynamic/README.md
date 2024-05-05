@@ -107,3 +107,27 @@ HBNB_MYSQL_USER=hbnb_dev HBNB_MYSQL_PWD=hbnb_dev_pwd HBNB_MYSQL_HOST=localhost H
 __File__
 ``api/v1/app.py``, ``web_dynamic/2-hbnb.py``, ``web_dynamic/templates/2-hbnb.html``, ``web_dynamic/static/styles/3-header.css``, ``web_dynamic/static/scripts/2-hbnb.js``
 
+### 4. Fetch places
+
+Replace the route ``2-hbnb`` with ``3-hbnb`` in the file ``3-hbnb.py`` (based on ``2-hbnb.py``)
+
+Create a new template ``3-hbnb.html`` (based on ``2-hbnb.html``) and update it:
+
+- Import the JavaScript ``static/scripts/3-hbnb.js`` in the`` <head>`` tag (instead of`` 2-hbnb.js``)
+- Remove the entire Jinja section of displaying all places (all ``article`` tags)
+
+Write a JavaScript script (``static/scripts/3-hbnb.js``):
+
+- Based on ``2-hbnb.js``
+- Request`` http://0.0.0.0:5001/api/v1/places_search/``:
+    - Description of this endpoint here. If this endpoint is not available, you will have to add it to the API (you can work all together for creating this endpoint)
+    - Send a ``POST`` request with ``Content-Type: application/json`` and an empty dictionary in the body - cURL version: ``curl "http://0.0.0.0:5001/api/v1/places_search" -XPOST -H "Content-Type: application/json" -d '{}'``
+    - Loop into the result of the request and create an ``article`` tag representing a ``Place`` in the section.places. (you can remove the ``Owner ``tag in the place description)
+
+The final result must be the same as previously, but now, places are loaded from the front-end, not from the back-end!
+
+__File__
+
+``web_dynamic/3-hbnb.py``, ``web_dynamic/templates/3-hbnb.html``, ``web_dynamic/static/scripts/3-hbnb.js``
+
+### 
